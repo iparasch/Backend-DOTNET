@@ -1,0 +1,16 @@
+﻿@using System.Security.Claims;
+@{ 
+    var user = User.FindFirst(ClaimTypes.Name);
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+</head>
+<body>
+    <h3>Welcome @user.Value</h3>
+    <br />
+    <a asp-controller="account" asp-action="logout"> Logout </a>
+</body>
+</html>

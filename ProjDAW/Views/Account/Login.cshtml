@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Login</title>
+</head>
+<body>
+    <h3>User Login</h3>
+    <span style="color:red;">@ViewBag.error</span>
+    <form method="post" asp-controller="account" asp-action="login">
+        Username <input type="text" name="username"/>
+        <br />
+        Password <input type="password" name="password"/>
+        <br />
+        <input type="submit" value="Login" />
+
+    </form>
+</body>
+</html>
